@@ -1,0 +1,325 @@
+.additional-experience {
+  padding: 80px 20px 112px;
+
+  background-color: #ffffff;
+}
+
+.additional-container {
+  max-width: 1152px;
+
+  margin: 0 auto;
+}
+
+/* ========================= */
+/* Heading */
+/* ========================= */
+
+.additional-heading {
+  margin-bottom: 40px;
+}
+
+.additional-label {
+  margin: 0 0 8px;
+
+  color: #8b5cf6;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  text-transform: uppercase;
+
+  letter-spacing: 2px;
+}
+
+.additional-heading h2 {
+  margin: 0;
+
+  color: #111827;
+
+  font-size: 36px;
+  font-weight: 700;
+
+  letter-spacing: -0.5px;
+}
+
+.additional-subtitle {
+  max-width: 600px;
+
+  margin: 8px 0 0;
+
+  color: #6b7280;
+
+  font-size: 16px;
+
+  line-height: 1.6;
+}
+
+/* ========================= */
+/* Cards Container */
+/* ========================= */
+
+.additional-list {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 24px;
+}
+
+/* ========================= */
+/* Card */
+/* ========================= */
+
+.additional-card {
+  position: relative;
+
+  overflow: hidden;
+
+  padding: 32px;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 12px;
+
+  background-color: #ffffff;
+
+  transition: all 0.3s ease;
+}
+
+.additional-card:hover {
+  transform: translateY(-4px);
+
+  border-color: #ddd6fe;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* ========================= */
+/* Left Accent Line */
+/* ========================= */
+
+.accent-line {
+  position: absolute;
+
+  top: 0;
+  bottom: 0;
+  left: 0;
+
+  width: 4px;
+
+  background: linear-gradient(
+    to bottom,
+    #a78bfa,
+    #8b5cf6
+  );
+}
+
+/* ========================= */
+/* Header */
+/* ========================= */
+
+.additional-header {
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: space-between;
+
+  gap: 16px;
+
+  padding-left: 8px;
+}
+
+.additional-title {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+}
+
+/* Icon */
+
+.additional-icon {
+  width: 40px;
+  height: 40px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background-color: #f3e8ff;
+
+  color: #8b5cf6;
+
+  font-size: 18px;
+}
+
+/* Title */
+
+.additional-title h3 {
+  margin: 0;
+
+  color: #111827;
+
+  font-size: 18px;
+
+  font-weight: 600;
+}
+
+.additional-title p {
+  margin: 4px 0 0;
+
+  color: #6b7280;
+
+  font-size: 14px;
+}
+
+/* ========================= */
+/* Date */
+/* ========================= */
+
+.additional-date {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  padding: 6px 12px;
+
+  border-radius: 999px;
+
+  background-color: #ede9fe;
+
+  color: #5b21b6;
+
+  font-size: 12px;
+
+  font-weight: 500;
+
+  white-space: nowrap;
+}
+
+.additional-date svg {
+  font-size: 13px;
+}
+
+/* ========================= */
+/* Description */
+/* ========================= */
+
+.additional-description {
+  margin: 16px 0 0;
+
+  padding-left: 8px;
+
+  color: #4b5563;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+/* ========================= */
+/* Responsibilities */
+/* ========================= */
+
+.additional-points {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 8px;
+
+  margin: 16px 0 0;
+
+  padding: 0 0 0 8px;
+
+  list-style: none;
+}
+
+.additional-points li {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 10px;
+
+  color: #4b5563;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+/* Bullet */
+
+.additional-bullet {
+  width: 6px;
+  height: 6px;
+
+  flex-shrink: 0;
+
+  margin-top: 8px;
+
+  border-radius: 50%;
+
+  background-color: #a78bfa;
+}
+
+/* ========================= */
+/* Tablet */
+/* ========================= */
+
+@media (max-width: 900px) {
+  .additional-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ========================= */
+/* Mobile */
+/* ========================= */
+
+@media (max-width: 480px) {
+  .additional-experience {
+    padding: 60px 16px 80px;
+  }
+
+  .additional-heading {
+    margin-bottom: 30px;
+  }
+
+  .additional-heading h2 {
+    font-size: 32px;
+  }
+
+  .additional-card {
+    padding: 20px;
+  }
+
+  .additional-header {
+    flex-direction: column;
+
+    gap: 12px;
+  }
+
+  .additional-date {
+    margin-left: 52px;
+  }
+
+  .additional-title h3 {
+    font-size: 16px;
+  }
+
+  .additional-description,
+  .additional-points li {
+    font-size: 13px;
+  }
+}

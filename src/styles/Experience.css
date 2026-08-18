@@ -1,0 +1,288 @@
+.experience {
+  padding: 80px 20px 112px;
+  background-color: #ffffff;
+}
+
+.experience-container {
+  max-width: 1152px;
+  margin: 0 auto;
+}
+
+/* Heading */
+
+.experience-heading {
+  margin-bottom: 40px;
+}
+
+.experience-heading h2 {
+  margin: 0;
+
+  color: #111827;
+
+  font-size: 36px;
+  font-weight: 700;
+
+  letter-spacing: -0.5px;
+}
+
+.experience-heading p {
+  margin: 8px 0 0;
+
+  color: #6b7280;
+
+  font-size: 16px;
+}
+
+/* Experience Cards */
+
+.experience-list {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 24px;
+}
+
+/* Experience Card */
+
+.experience-card {
+  padding: 32px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+
+  background-color: #ffffff;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+
+  transition: all 0.3s ease;
+}
+
+.experience-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+
+  transform: translateY(-2px);
+}
+
+/* Header */
+
+.experience-header {
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: space-between;
+
+  gap: 16px;
+}
+
+.experience-title {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+}
+
+/* Icon */
+
+.experience-icon {
+  width: 40px;
+  height: 40px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background-color: #f3e8ff;
+
+  color: #8b5cf6;
+
+  font-size: 19px;
+}
+
+.experience-title h3 {
+  margin: 0;
+
+  color: #111827;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  line-height: 1.4;
+}
+
+/* Date */
+
+.experience-date {
+  color: #6b7280;
+
+  font-size: 14px;
+
+  white-space: nowrap;
+}
+
+/* Role */
+
+.experience-role {
+  margin: 12px 0 0;
+
+  color: #374151;
+
+  font-size: 14px;
+
+  font-weight: 600;
+}
+
+/* Responsibilities */
+
+.experience-points {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 8px;
+
+  margin: 16px 0 0;
+
+  padding: 0;
+
+  list-style: none;
+}
+
+.experience-points li {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 10px;
+
+  color: #4b5563;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+/* Bullet */
+
+.bullet {
+  width: 6px;
+  height: 6px;
+
+  flex-shrink: 0;
+
+  margin-top: 8px;
+
+  border-radius: 50%;
+
+  background-color: #a78bfa;
+}
+
+/* Skills */
+
+.experience-skills {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin-top: 20px;
+}
+
+.skill-tag {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 5px;
+
+  padding: 5px 12px;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 999px;
+
+  background-color: #f9fafb;
+
+  color: #4b5563;
+
+  font-size: 12px;
+
+  font-weight: 500;
+}
+
+.skill-tag svg {
+  color: #a78bfa;
+
+  font-size: 13px;
+}
+
+/* ========================= */
+/* Tablet */
+/* ========================= */
+
+@media (max-width: 900px) {
+  .experience-list {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-container {
+    max-width: 768px;
+  }
+}
+
+/* ========================= */
+/* Mobile */
+/* ========================= */
+
+@media (max-width: 480px) {
+  .experience {
+    padding: 60px 16px 80px;
+  }
+
+  .experience-heading {
+    margin-bottom: 30px;
+  }
+
+  .experience-heading h2 {
+    font-size: 32px;
+  }
+
+  .experience-card {
+    padding: 20px;
+  }
+
+  .experience-header {
+    flex-direction: column;
+
+    gap: 12px;
+  }
+
+  .experience-date {
+    margin-left: 52px;
+
+    font-size: 13px;
+  }
+
+  .experience-title h3 {
+    font-size: 15px;
+  }
+
+  .experience-points li {
+    font-size: 13px;
+  }
+
+  .skill-tag {
+    font-size: 11px;
+
+    padding: 5px 10px;
+  }
+}
