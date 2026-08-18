@@ -55,13 +55,13 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/projects" onClick={closeMenu}>
-              Projects
+            <NavLink to="/certificates" onClick={closeMenu}>
+              Certifications
             </NavLink>
           </li>
           <li>
-            <NavLink to="/certifications" onClick={closeMenu}>
-              Certifications
+            <NavLink to="/projects" onClick={closeMenu}>
+              Projects
             </NavLink>
           </li>
           <li>
