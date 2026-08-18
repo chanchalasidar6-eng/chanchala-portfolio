@@ -1,0 +1,348 @@
+.projects {
+    padding: 80px 20px 112px;
+    background-color: #f9fafb;
+}
+
+.projects-container {
+    max-width: 1152px;
+    margin: 0 auto;
+}
+
+/* =========================
+   Heading
+========================= */
+
+.projects-heading {
+    margin-bottom: 40px;
+}
+
+.projects-heading h2 {
+    margin: 0;
+
+    color: #111827;
+
+    font-size: 36px;
+    font-weight: 700;
+
+    letter-spacing: -0.5px;
+}
+
+.projects-heading p {
+    margin: 8px 0 0;
+
+    color: #6b7280;
+
+    font-size: 16px;
+}
+
+/* =========================
+   Grid
+========================= */
+
+.projects-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 24px;
+}
+
+/* =========================
+   Card
+========================= */
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 12px;
+
+    background-color: #ffffff;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================
+   Image
+========================= */
+
+.project-image-wrapper {
+    position: relative;
+
+    overflow: hidden;
+}
+
+.project-image {
+    display: block;
+
+    width: 100%;
+
+    aspect-ratio: 16 / 10;
+
+    object-fit: cover;
+
+    transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-image {
+    transform: scale(1.05);
+}
+
+/* =========================
+   Category
+========================= */
+
+.project-category {
+    position: absolute;
+
+    top: 16px;
+    left: 16px;
+
+    padding: 5px 12px;
+
+    border: 1px solid #ddd6fe;
+
+    border-radius: 6px;
+
+    background-color: #f5f3ff;
+
+    color: #7c3aed;
+
+    font-family: monospace;
+
+    font-size: 12px;
+}
+
+/* =========================
+   Content
+========================= */
+
+.project-content {
+    display: flex;
+    flex-direction: column;
+
+    flex: 1;
+
+    padding: 20px;
+}
+
+.project-content h3 {
+    margin: 0;
+
+    color: #111827;
+
+    font-size: 20px;
+
+    font-weight: 600;
+}
+
+.project-description {
+    margin: 6px 0 0;
+
+    color: #4b5563;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+/* =========================
+   Skills
+========================= */
+
+.project-skills {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-top: 16px;
+}
+
+.project-skills span {
+    padding: 5px 12px;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 999px;
+
+    background-color: #f9fafb;
+
+    color: #4b5563;
+
+    font-family: monospace;
+
+    font-size: 12px;
+}
+
+/* =========================
+   Buttons
+========================= */
+
+.project-buttons {
+    display: flex;
+
+    gap: 8px;
+
+    margin-top: auto;
+
+    padding-top: 16px;
+
+    border-top: 1px solid #f3f4f6;
+}
+
+.project-buttons a {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 9px 16px;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+/* Live Demo */
+
+.live-button {
+    border: 1px solid #ddd6fe;
+
+    color: #7c3aed;
+
+    background-color: #ffffff;
+}
+
+.live-button:hover {
+    border-color: #8b5cf6;
+
+    background-color: #8b5cf6;
+
+    color: #ffffff;
+}
+
+/* GitHub */
+
+.github-button {
+    border: 1px solid #e5e7eb;
+
+    color: #374151;
+
+    background-color: #ffffff;
+}
+
+.github-button:hover {
+    border-color: #9ca3af;
+
+    background-color: #f9fafb;
+}
+
+/* =========================
+   View All
+========================= */
+
+.view-all {
+    display: flex;
+
+    justify-content: center;
+
+    margin-top: 48px;
+}
+
+.view-all a {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 12px 24px;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 8px;
+
+    background-color: #ffffff;
+
+    color: #374151;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+.view-all a:hover {
+    border-color: #c4b5fd;
+
+    color: #7c3aed;
+}
+
+.view-all a svg {
+    transition: transform 0.3s ease;
+}
+
+.view-all a:hover svg {
+    transform: translateX(4px);
+}
+
+/* =========================
+   Tablet
+========================= */
+
+@media (max-width: 800px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 480px) {
+    .projects {
+        padding: 60px 16px 80px;
+    }
+
+    .projects-heading h2 {
+        font-size: 32px;
+    }
+
+    .project-content {
+        padding: 18px;
+    }
+
+    .project-buttons {
+        flex-direction: column;
+    }
+
+    .project-buttons a {
+        width: 100%;
+    }
+}
