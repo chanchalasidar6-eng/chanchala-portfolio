@@ -7,7 +7,9 @@ import Skills from "./pages/Skills";
 import Education from "./pages/Education";
 import Certificates from "./pages/Certificates";
 import Projects from "./pages/Projects";
-// import Contact from "./pages/Contact";
+import Resume from "./pages/Resume";
+import Contact from "./pages/Contact";
+import Footer from "./components/Footer"; 
 
 function App() {
   return (
@@ -21,8 +23,10 @@ function App() {
         <Route path="/education" element={<Education />} />
         <Route path="/certificates" element={<Certificates />} />
         <Route path="/projects" element={<Projects />} />
-        {/* <Route path="/contact" element={<Contact />} /> */}
+        <Route path="/resume" element={<Resume />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }
